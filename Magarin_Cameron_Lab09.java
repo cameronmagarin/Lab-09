@@ -46,7 +46,7 @@ public class Magarin_Cameron_Lab09 {
                 System.out.println(arrayChoice + " has been found at " + x);
             }
         }
-        if(!choiceFound){
+        if(!choiceFound){//displays if users input value isnt present in the array
             System.out.println(arrayChoice + " is not in this array! ");
         }
 
@@ -56,7 +56,7 @@ public class Magarin_Cameron_Lab09 {
         for(int x = 0; x < dataPoints.length; x++){
             if(dataPoints[x] == arrayDecision){
                 System.out.println(arrayDecision + " has been found at " + x);
-                break;
+                break;//stops program from running like last program
             }
 
         }
@@ -65,13 +65,13 @@ public class Magarin_Cameron_Lab09 {
         }
 
         //task 2D
-        int arrayMin = 0;
-        int arrayMax = 0;
+        int arrayMin = 0;//hols value to compare to other values
+        int arrayMax = 0;// holds valueto compare to other values
         for(int x = 0; x < dataPoints.length; x++){
-            if(arrayMin > dataPoints[x]){
+            if(arrayMin > dataPoints[x]){// checks to see if any other values in the array are smaller than the previous value stored
                 arrayMin = dataPoints[x];
             }
-            if(arrayMax < dataPoints[x]){
+            if(arrayMax < dataPoints[x]){// checks to see if any other values in the array are larger than the previous value stored
                 arrayMax = dataPoints[x];
             }
         }
